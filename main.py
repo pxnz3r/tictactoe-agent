@@ -127,6 +127,26 @@ def search_effort():
     return table
 
 
+def wilson_interval(count, total, z=1.96):
+    """
+    95% Wilson interval for a rate such as losses / games. Unlike the
+    plain rate +- 2 standard errors, it stays inside 0 to 1 and still gives
+    a useful upper bound when the count is 0 ("never lost in 200 games"
+    means the true loss rate is probably below about 2%).
+
+    Inputs:
+        count: how many times it happened.
+        total: how many games.
+        z: 1.96 for 95%.
+    Returns:
+        (low, high).
+    """
+    rate = count / total
+    centre = (rate + z**2 / (2 * total)) / (1 + z**2 / total)
+    spread = z * np.sqrt(rate * (1 - rate) / total + z**2 / (4 * total**2)) / (1 + z**2 / total)
+    return max(0.0, centre - spread), min(1.0, centre + spread)
+
+
 def tournament():
     """
     Every agent against every agent, 100 games as X and 100 as O.
@@ -149,7 +169,17 @@ def tournament():
                         wins += 1
                     else:
                         losses += 1
-            rows.append({"Agent": agent, "Opponent": opponent, "Wins": wins, "Draws": draws, "Losses": losses})
+            low, high = wilson_interval(losses, 2 * GAMES_PER_SIDE)
+            rows.append(
+                {
+                    "Agent": agent,
+                    "Opponent": opponent,
+                    "Wins": wins,
+                    "Draws": draws,
+                    "Losses": losses,
+                    "Loss rate, 95% interval": f"{low:.1%} to {high:.1%}",
+                }
+            )
         print(f"  {agent}: done")
     table = pd.DataFrame(rows)
     save_table(table, f"{FOLDER}/tournament.csv")

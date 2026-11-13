@@ -1,26 +1,26 @@
-Agent,Opponent,Wins,Draws,Losses
-Random,Random,86,31,83
-Random,"Heuristic, 1 move ahead",4,10,186
-Random,"Heuristic, 2 moves ahead",0,18,182
-Random,"Heuristic, 4 moves ahead",0,17,183
-Random,Perfect (minimax),0,15,185
-"Heuristic, 1 move ahead",Random,192,4,4
-"Heuristic, 1 move ahead","Heuristic, 1 move ahead",0,200,0
-"Heuristic, 1 move ahead","Heuristic, 2 moves ahead",0,156,44
-"Heuristic, 1 move ahead","Heuristic, 4 moves ahead",0,169,31
-"Heuristic, 1 move ahead",Perfect (minimax),0,163,37
-"Heuristic, 2 moves ahead",Random,184,16,0
-"Heuristic, 2 moves ahead","Heuristic, 1 move ahead",50,150,0
-"Heuristic, 2 moves ahead","Heuristic, 2 moves ahead",0,200,0
-"Heuristic, 2 moves ahead","Heuristic, 4 moves ahead",0,200,0
-"Heuristic, 2 moves ahead",Perfect (minimax),0,200,0
-"Heuristic, 4 moves ahead",Random,179,21,0
-"Heuristic, 4 moves ahead","Heuristic, 1 move ahead",33,167,0
-"Heuristic, 4 moves ahead","Heuristic, 2 moves ahead",0,200,0
-"Heuristic, 4 moves ahead","Heuristic, 4 moves ahead",0,200,0
-"Heuristic, 4 moves ahead",Perfect (minimax),0,200,0
-Perfect (minimax),Random,172,28,0
-Perfect (minimax),"Heuristic, 1 move ahead",31,169,0
-Perfect (minimax),"Heuristic, 2 moves ahead",0,200,0
-Perfect (minimax),"Heuristic, 4 moves ahead",0,200,0
-Perfect (minimax),Perfect (minimax),0,200,0
+Agent,Opponent,Wins,Draws,Losses,"Loss rate, 95% interval"
+Random,Random,86,31,83,34.9% to 48.4%
+Random,"Heuristic, 1 move ahead",4,10,186,88.6% to 95.8%
+Random,"Heuristic, 2 moves ahead",0,18,182,86.2% to 94.2%
+Random,"Heuristic, 4 moves ahead",0,17,183,86.8% to 94.6%
+Random,Perfect (minimax),0,15,185,88.0% to 95.4%
+"Heuristic, 1 move ahead",Random,192,4,4,0.8% to 5.0%
+"Heuristic, 1 move ahead","Heuristic, 1 move ahead",0,200,0,0.0% to 1.9%
+"Heuristic, 1 move ahead","Heuristic, 2 moves ahead",0,156,44,16.8% to 28.2%
+"Heuristic, 1 move ahead","Heuristic, 4 moves ahead",0,169,31,11.1% to 21.2%
+"Heuristic, 1 move ahead",Perfect (minimax),0,163,37,13.7% to 24.5%
+"Heuristic, 2 moves ahead",Random,184,16,0,0.0% to 1.9%
+"Heuristic, 2 moves ahead","Heuristic, 1 move ahead",50,150,0,0.0% to 1.9%
+"Heuristic, 2 moves ahead","Heuristic, 2 moves ahead",0,200,0,0.0% to 1.9%
+"Heuristic, 2 moves ahead","Heuristic, 4 moves ahead",0,200,0,0.0% to 1.9%
+"Heuristic, 2 moves ahead",Perfect (minimax),0,200,0,0.0% to 1.9%
+"Heuristic, 4 moves ahead",Random,179,21,0,0.0% to 1.9%
+"Heuristic, 4 moves ahead","Heuristic, 1 move ahead",33,167,0,0.0% to 1.9%
+"Heuristic, 4 moves ahead","Heuristic, 2 moves ahead",0,200,0,0.0% to 1.9%
+"Heuristic, 4 moves ahead","Heuristic, 4 moves ahead",0,200,0,0.0% to 1.9%
+"Heuristic, 4 moves ahead",Perfect (minimax),0,200,0,0.0% to 1.9%
+Perfect (minimax),Random,172,28,0,0.0% to 1.9%
+Perfect (minimax),"Heuristic, 1 move ahead",31,169,0,0.0% to 1.9%
+Perfect (minimax),"Heuristic, 2 moves ahead",0,200,0,0.0% to 1.9%
+Perfect (minimax),"Heuristic, 4 moves ahead",0,200,0,0.0% to 1.9%
+Perfect (minimax),Perfect (minimax),0,200,0,0.0% to 1.9%

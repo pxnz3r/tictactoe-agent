@@ -1,13 +1,13 @@
 Position,Search,Boards visited,Milliseconds,Value
-Empty board,Minimax (full tree),549946,2316.1,0
-Empty board,Alpha-beta,20866,110.2,0
-Empty board,"Alpha-beta, centre and corners first",7865,40.3,0
+Empty board,Minimax (full tree),549946,2221.2,0
+Empty board,Alpha-beta,20866,107.7,0
+Empty board,"Alpha-beta, centre and corners first",7865,29.5,0
 Empty board,"Heuristic, 1 move ahead",10,0.1,4
-Empty board,"Heuristic, 2 moves ahead",82,0.7,1
-Empty board,"Heuristic, 4 moves ahead",3610,29.8,0
-"X corner, O centre",Minimax (full tree),7332,34.3,0
-"X corner, O centre",Alpha-beta,871,2.8,0
-"X corner, O centre","Alpha-beta, centre and corners first",768,4.8,0
-"X corner, O centre","Heuristic, 1 move ahead",8,0.1,10
-"X corner, O centre","Heuristic, 2 moves ahead",50,0.5,-9
-"X corner, O centre","Heuristic, 4 moves ahead",1020,7.3,-8
+Empty board,"Heuristic, 2 moves ahead",82,0.4,1
+Empty board,"Heuristic, 4 moves ahead",3610,16.8,0
+"X corner, O centre",Minimax (full tree),7332,36.0,0
+"X corner, O centre",Alpha-beta,871,2.7,0
+"X corner, O centre","Alpha-beta, centre and corners first",768,2.6,0
+"X corner, O centre","Heuristic, 1 move ahead",8,0.0,10
+"X corner, O centre","Heuristic, 2 moves ahead",50,0.2,-9
+"X corner, O centre","Heuristic, 4 moves ahead",1020,4.2,-8
